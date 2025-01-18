@@ -33,7 +33,7 @@ The Home Lab project allows the user to set up a controlled environment to simul
 - Install VirtualBox on your host machine.
 - Download it from [VirtualBox Official Site](https://www.virtualbox.org/).
 
-*Ref 1: VirtualBox installation completed on a Windows machine.*
+*Ref 1: VirtualBox installer on a Windows machine.*
 ![VirtualBox Installation](https://via.placeholder.com/800x400)
 
 ---
