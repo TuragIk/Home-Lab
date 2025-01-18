@@ -84,6 +84,10 @@ The Home Lab project allows the user to set up a controlled environment to simul
 *Ref 4: Network Adapter Settings in VirtualBox.*
 ![VirtualBox Network Adapter Settings](https://via.placeholder.com/800x400)
 
+**Here is a diagram of the current network configuration**
+*Ref 5: Network Configuration Diagram.*
+![Network Configuration Diagram](https://via.placeholder.com/800x400)
+
 ---
 
 ### **4. Test the Connection**
@@ -100,8 +104,8 @@ The Home Lab project allows the user to set up a controlled environment to simul
      ```
 4. Ensure both VMs can ping each other successfully.
 
-*Ref 5: Successful ping results from Kali Linux to Windows*
-![Successful Ping Kali to Windows](https://via.placeholder.com/800x400)
+*Ref 6: Successful ping results from Windows to Kali Linux*
+![Successful Ping Windows to Kali](https://via.placeholder.com/800x400)
 
 ---
 
