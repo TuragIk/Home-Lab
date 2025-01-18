@@ -66,7 +66,7 @@ The Home Lab project allows the user to set up a controlled environment to simul
 #### **Step 3.1: Private Network Setup**
 1. In VirtualBox, configure the network adapters for both VMs:
    - Adapter Type: **Internal Network**.
-   - Network Name: `CyberLab` (or any custom name).
+   - Network Name: `intnet` (or any custom name).
 2. Assign static IP addresses to the VMs:
    - **Kali Linux**: 
      ```bash
