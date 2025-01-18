@@ -34,7 +34,8 @@ The Home Lab project allows the user to set up a controlled environment to simul
 - Download it from [VirtualBox Official Site](https://www.virtualbox.org/).
 
 *Ref 1: VirtualBox installer on a Windows machine.*
-![VirtualBox Installation](https://via.placeholder.com/800x400)
+
+![VirtualBox Installation](./screenshots/vbox-download.png)
 
 ---
 
@@ -46,17 +47,18 @@ The Home Lab project allows the user to set up a controlled environment to simul
    - Attach the downloaded ISO to the VM.
 3. Start the VM and follow the Kali Linux installation steps.
 
-*Ref 2: VirtualBox settings for Kali Linux VM.*
-![Kali Linux VM Settings](https://via.placeholder.com/800x400)
-
-
 #### **Step 2.2: Creating the Windows VM**
 1. Download the Windows ISO from the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/).
 2. Repeat the same process as Kali, allocating at least 4 GB of RAM and 30 GB of disk space.
 3. Install Windows and set up a user account.
 
-*Ref 3: VirtualBox settings for Windows VM.*
-![Windows VM Settings](https://via.placeholder.com/800x400)
+*Ref 2: Ram and CPU settings on VirtualBox*
+
+![Kali Linux VM Settings](./screenshots/vm-settings.png)
+
+*Ref 3: Storage Settings on VirtualBox*
+
+![Windows VM Settings](./screenshots/vbox-settings-storage.png)
 
 ---
 
@@ -82,11 +84,14 @@ The Home Lab project allows the user to set up a controlled environment to simul
      Configure the IP manually in the Network Settings as `192.168.56.102`.
 
 *Ref 4: Network Adapter Settings in VirtualBox.*
-![VirtualBox Network Adapter Settings](https://via.placeholder.com/800x400)
+
+![VirtualBox Network Adapter Settings](./screenshots/internal-network.png)
 
 **Here is a diagram of the current network configuration**
+
 *Ref 5: Network Configuration Diagram.*
-![Network Configuration Diagram](https://via.placeholder.com/800x400)
+
+![Network Configuration Diagram](./screenshots/network-diagram.drawio.png)
 
 ---
 
@@ -105,7 +110,8 @@ The Home Lab project allows the user to set up a controlled environment to simul
 4. Ensure both VMs can ping each other successfully.
 
 *Ref 6: Successful ping results from Windows to Kali Linux*
-![Successful Ping Windows to Kali](https://via.placeholder.com/800x400)
+
+![Successful Ping Windows to Kali](./screenshots/windows-kali-ping.png)
 
 ---
 
