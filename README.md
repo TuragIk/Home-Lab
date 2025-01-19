@@ -40,26 +40,53 @@ The Home Lab project allows the user to set up a controlled environment to simul
 ---
 
 ### **2. Virtual Machine Creation**
-#### **Step 2.1: Creating the Kali Linux VM**
-1. Download the Kali Linux ISO from the [Official Kali Site](https://www.kali.org/get-kali/).
-2. Open VirtualBox, click **New**, and follow the prompts to:
-   - Allocate 2 GB of RAM and 20 GB of disk space for the VM.
-   - Attach the downloaded ISO to the VM.
-3. Start the VM and follow the Kali Linux installation steps.
 
-#### **Step 2.2: Creating the Windows VM**
+#### **Step 2.1: Using the Kali Linux VirtualBox Installer**
+1. Download the **Kali Linux VirtualBox Image** from the [Kali Linux Official Downloads](https://www.kali.org/get-kali/#kali-virtual-machines).
+   - Choose the version for **VirtualBox**.
+   - Ensure you download the image matching your system's architecture (e.g., 64-bit).
+2. Extract the downloaded `.7z` file:
+   - Use **7-Zip** (recommended). Download it from [7-Zip Official Website](https://www.7-zip.org/).
+   - On Windows, install **7-Zip** and right-click the `.7z` file, then select `7-Zip > Extract Here`.
+   - On Linux/macOS, use the default archive manager or install `p7zip`:
+     ```bash
+     sudo apt install p7zip-full -y  # For Linux
+     ```
+3. Set up the virtual machine:
+   - Locate the extracted Virtual Disk Image (.vdi) file.
+   - Simply double-click the `.vdi` file, and VirtualBox will automatically set up the VM.
+
+---
+
+#### **Step 2.2: Adjust Kali Linux VM Settings**
+1. Once the Kali Linux VM is created, select it in VirtualBox and click **Settings**.
+2. Modify the following settings:
+   - **System > Motherboard**:
+     - Allocate at least **2 GB of RAM** (2048 MB).
+   - **System > Processor**:
+     - Assign at least **2 CPUs**.
+   - **Display > Screen**:
+     - Set **Video Memory** to **128 MB**.
+     - Enable **3D Acceleration** (optional but recommended).
+   - **Network > Adapter 1**:
+     - Set to **Internal Network** and name it (e.g., `intnet`).
+
+---
+
+#### **Step 2.3: Creating the Windows VM**
 1. Download the Windows ISO from the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/).
-2. Repeat the same process as Kali, allocating at least 4 GB of RAM and 30 GB of disk space.
+2. Repeat the same process as Kali, allocating at least **4 GB of RAM** and **30 GB of disk space**.
 3. Install Windows and set up a user account.
 
-*Ref 2: Ram and CPU settings on VirtualBox*
+*Ref 2: RAM and CPU settings on VirtualBox.*
 
-![Kali Linux VM Settings](./screenshots/vm-settings.png)
+![Ram and CPU settings](./screenshots/vm-settings.png)
 
-*Ref 3: Storage Settings on VirtualBox*
+*Ref 3: Storage Settings on VirtualBox.*
 
-![Windows VM Settings](./screenshots/vbox-settings-storage.png)
+![Storage Settings](./screenshots/vbox-settings-storage.png)
 
+---
 ---
 
 ### **3. Networking Configuration**
