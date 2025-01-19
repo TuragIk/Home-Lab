@@ -87,7 +87,6 @@ The Home Lab project allows the user to set up a controlled environment to simul
 ![Storage Settings](./screenshots/vbox-settings-storage.png)
 
 ---
----
 
 ### **3. Networking Configuration**
 #### **Step 3.1: Private Network Setup**
@@ -95,7 +94,8 @@ The Home Lab project allows the user to set up a controlled environment to simul
    - Adapter Type: **Internal Network**.
    - Network Name: `intnet` (or any custom name).
 2. Assign static IP addresses to the VMs:
-   - **Kali Linux**: 
+   - **Kali Linux**:
+     *Note: To log into Kali, the default username is **kali** and the default password is also **kali***
      ```bash
      sudo nano /etc/network/interfaces
      ```
@@ -144,6 +144,42 @@ The Home Lab project allows the user to set up a controlled environment to simul
 
 ### **5. Related Projects**
 Here are some of my projects that use this home lab:
+
+---
+
+### **6. Connecting Kali to the internet**
+Many of the tools that you may need with Kali require internet connection. This is not possible with the current configuration with an internal network.
+
+**Set up temporary internet connection:**
+1. In VirtualBox, open the settings for the Kali Linux VM.
+2. In Network, under Adapter 1, change *Attached to:* to **NAT**.
+   
+*Ref 7: Changing Adapter settings to NAT*
+
+![Changing Adapter settings to NAT](./screenshots/NAT-connection.png)
+
+3. Click OK and open the Kali VM.
+4. It is likely that Kali will not boot correctly. To fix this, type
+   ```bash
+   blkid
+   ```
+   in the terminal. Make note of the paths of the resulting lines.
+5. For each resulting line, type
+   ```bash
+   fsck (INSERT PATH HERE) -y
+   ```
+6. After running `fsck` for each outputted line, type reboot -f
+
+*Ref 8: initramfs Error Example*
+
+![Changing Adapter settings to NAT](./screenshots/terminal.png)  
+
+7. Log into Kali and install any necessary tools for your project.
+8. Close the VM, and go back to VirtualBox and set the KaliVM network adaptor back to **Internal Network**, with the appropriate name of your network.
+
+*Ref 9: Changing Adapter settings to Internal Network*
+
+![Changing Adapter settings to Internal Network](./screenshots/intnet-connection.png)  
 
 ---
 
