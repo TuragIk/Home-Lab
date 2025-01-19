@@ -53,8 +53,8 @@ The Home Lab project allows the user to set up a controlled environment to simul
      sudo apt install p7zip-full -y  # For Linux
      ```
 3. Set up the virtual machine:
-   - Locate the extracted Virtual Disk Image (.vdi) file.
-   - Simply double-click the `.vdi` file, and VirtualBox will automatically set up the VM.
+   - Locate the extracted VirtualBox Machine Definition file.
+   - Simply double-click the VirtualBox Machine Definition file, and VirtualBox will automatically set up the VM.
 
 ---
 
