@@ -144,7 +144,7 @@ The Home Lab project allows the user to set up a controlled environment to simul
 
 ### **5. Related Projects**
 Here are some of my projects that use this home lab:
-
+- [Network Analysis Project](https://github.com/TuragIk/network-analysis-project)
 ---
 
 ### **6. Connecting Kali to the internet**
